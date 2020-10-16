@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="menuTitleListWords">Словарик</string>
+    <string name="menuTitleStudy">Учить</string>
+    <string name="menuTitleTranslate">Перевод</string>
+    <string name="enterTheThemeName">Введите название темы</string>
+    <string name="saveBTN">Сохранить</string>
+</resources>

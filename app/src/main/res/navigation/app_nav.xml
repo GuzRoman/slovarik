@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navi"
+    app:startDestination="@id/dictionaryFragment">
+
+    <fragment
+        android:id="@+id/dictionaryFragment"
+        android:name="apportunity.slovarik.view.fragments.dictionary.DictionaryFragment"
+        android:label="dictionary_fragment"
+        tools:layout="@layout/dictionary_fragment" >
+        <action
+            android:id="@+id/action_dictionaryFragment_to_addDictionaryFragment"
+            app:destination="@id/addDictionaryFragment" />
+        <action
+            android:id="@+id/action_dictionaryFragment_to_itemThemeFragment"
+            app:destination="@id/itemThemeFragment" >
+            <argument
+                android:name="ThemeId"
+                android:defaultValue="1" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/translateFragment"
+        android:name="apportunity.slovarik.view.fragments.translate.TranslateFragment"
+        android:label="translate_fragment"
+        tools:layout="@layout/translate_fragment" />
+    <fragment
+        android:id="@+id/studyFragment"
+        android:name="apportunity.slovarik.view.fragments.study.StudyFragment"
+        android:label="study_fragment"
+        tools:layout="@layout/study_fragment" />
+    <fragment
+        android:id="@+id/addDictionaryFragment"
+        android:name="apportunity.slovarik.view.fragments.addtheme.AddDictionaryFragment"
+        android:label="fragment_add_dictionary"
+        tools:layout="@layout/add_dictionary_fragment" >
+        <action
+            android:id="@+id/action_addDictionaryFragment_to_dictionaryFragment"
+            app:destination="@id/dictionaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemThemeFragment"
+        android:name="apportunity.slovarik.view.fragments.itemtheme.ItemThemeFragment"
+        android:label="item_theme_fragment"
+        tools:layout="@layout/item_theme_fragment" >
+        <action
+            android:id="@+id/action_itemThemeFragment_to_dictionaryFragment"
+            app:destination="@id/dictionaryFragment" />
+        <argument
+            android:name="ThemeId"
+            app:argType="long" />
+    </fragment>
+</navigation>

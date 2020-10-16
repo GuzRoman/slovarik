@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "914839730372",
+    "firebase_url": "https://slovarik-a0627.firebaseio.com",
+    "project_id": "slovarik-a0627",
+    "storage_bucket": "slovarik-a0627.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:914839730372:android:847476c9143784b22df191",
+        "android_client_info": {
+          "package_name": "apportunity.slovarik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "914839730372-javaml8041aafov3io44a4nhnb5abp5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "apportunity.slovarik",
+            "certificate_hash": "5382794b7db6c2a4d8aa1290fc2a26f118a89a81"
+          }
+        },
+        {
+          "client_id": "914839730372-6q3fjqifequlf5435q6c5tk3erql634r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXm9W6cZNEiKuYPaQO3-_OwyjCmtFy6Do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "914839730372-6q3fjqifequlf5435q6c5tk3erql634r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
