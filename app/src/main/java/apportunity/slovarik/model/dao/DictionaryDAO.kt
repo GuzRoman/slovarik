@@ -16,7 +16,4 @@ interface DictionaryDAO {
     @Query("SELECT * FROM dictionary_table")
     fun readAllDictionaryThemesWithWords(): LiveData<List<DictionaryWithWords>>
 
-    @Transaction
-    @Query("SELECT * FROM dictionary_table WHERE dictionary_id == :themeId ")
-    fun loadTheme(themeId : String) : DictionaryWithWords
 }

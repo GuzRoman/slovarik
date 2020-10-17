@@ -3,14 +3,13 @@ package apportunity.slovarik.view.fragments.dictionary
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import apportunity.slovarik.R
 import apportunity.slovarik.model.dbmodel.DictionaryWithWords
 
 
-class DictionaryAdapter(var itemClickListener: AdapterView.OnItemClickListener):
+class DictionaryAdapter(var itemClickListener: DictionaryFragment):
 RecyclerView.Adapter<DictionaryAdapter.DictionaryHolder>() {
 
     private var dictionaryThemes = emptyList<DictionaryWithWords>()
@@ -19,7 +18,7 @@ RecyclerView.Adapter<DictionaryAdapter.DictionaryHolder>() {
         var title: TextView = item.findViewById(R.id.themeNameItem)
         var bestResult: TextView = item.findViewById(R.id.bestResultThemeItem)
 
-        fun bind(theme: DictionaryWithWords, clickListener: AdapterView.OnItemClickListener){
+        fun bind(theme: DictionaryWithWords, clickListener: DictionaryFragment){
             itemView.setOnClickListener {
 
             }

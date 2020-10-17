@@ -11,10 +11,6 @@ import apportunity.slovarik.model.repository.DictionaryRepository
 class ItemThemeViewModel(application: Application): AndroidViewModel(application) {
     private val repository: DictionaryRepository
 
-    fun getThemeWoords(id: String): DictionaryWithWords{
-        return repository.getThemeWord(id)
-    }
-
 
     init {
         val dictionaryDAO = DictionaryDatabase.getDatabase(application).dictionaryDAO()
